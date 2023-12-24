@@ -16,16 +16,17 @@ public class ovenClock {
         int B = sc.nextInt(); // 분
         int C = sc.nextInt(); // 소요시간
 
-//        B = B + C;
-//        A = A + (B/60) > 23 ? 0 : A + (B/60);
-//        B = (B%60);
-//
-//        System.out.println(A + " " + B);
+        B = B + C;
+        A = (A + (B/60)) % 24 ;
+//        A = (A + (B/60)) > 23 ? 0 : A + (B/60); // 이거 잘못됐어 유리마 정신차려
+        B = (B%60);
 
-        int full = (A*60) + B + C;
-        int hour = (full/60) % 24;
-        int min = full % 60;
+        System.out.println(A + " " + B);
 
-        System.out.println(hour + " " + min);
+//        int full = (A*60) + B + C;
+//        int hour = (full/60) % 24;
+//        int min = full % 60;
+
+//        System.out.println(hour + " " + min);
     }
 }
