@@ -17,7 +17,7 @@ public class count {
 
         Scanner sc = new Scanner(System.in);
         int cnt = sc.nextInt(); //배열에 담을 개수
-        int[] arr = new int[cnt];
+        Integer[] arr = new Integer[cnt];
 
         int res = 0; // 찾고자 하는 숫자 count
 
@@ -34,9 +34,10 @@ public class count {
 //        }
 
         /*방법 2. 배열을 List<Integer> 형 리스트로 변환*/
-        List<Integer> list = Arrays.stream(arr)
-                .boxed()// arr의 요소 박싱 ; 필요한 이유..?
-                .collect(Collectors.toList()); // 리스트로 변환
+//        List<Integer> list = Arrays.stream(arr)
+//                .boxed()// arr의 요소 박싱 ; 필요한 이유..?
+//                .collect(Collectors.toList()); // 리스트로 변환
+        List<Integer> list = Arrays.asList(arr);
 
         res = Collections.frequency(list, find);
 
