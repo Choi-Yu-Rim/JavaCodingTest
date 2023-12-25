@@ -12,14 +12,14 @@ public class AplusB5 {
         * */
 
         Scanner sc = new Scanner(System.in);
-        String res = "";
+        int res = 0;
         Boolean next = true;
 
         while(sc.hasNext()){
             int b = sc.nextInt();
             int c = sc.nextInt();
             if(b==0 && c==0) break;
-            res = (b+c)+"";
+            res = b+c;
             System.out.println(res);
         }
 
