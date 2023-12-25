@@ -2,7 +2,7 @@ package Loop;
 
 import java.io.*;
 
-public class Ltwelve {
+public class AplusB4 {
     public static void main(String[] args) throws IOException {
         /*
         *   입력은 여러 개의 테스트 케이스로 이루어져 있다.
